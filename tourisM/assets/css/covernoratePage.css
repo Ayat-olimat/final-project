@@ -1,0 +1,1003 @@
+
+/*  ---------------------  Governorate pages  -----------------------    */ 
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior:smooth;
+          
+    }
+    .btn{
+      display: inline-block;
+      margin-top: 1rem;
+      background:var(--orange);
+      color:#fff;
+      padding:.8rem 3rem;
+      cursor: pointer;
+     
+    }
+    
+    .btn:hover{
+      background:rgba(255, 165, 0,.2);
+      color:var(--orange);
+    }
+  
+  
+  
+
+
+
+  /* ------------- slider city page --------------------*/ 
+
+  .home-Cities{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .home-Cities .content{
+    text-align: center;
+  }
+  
+  .home-Cities .content h3{
+    font-size: 4.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  }
+  
+  .home-Cities .content p{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:.5rem 0;
+  }
+  
+  .home-Cities .video-container video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .home-Cities .controls{
+    padding:1rem;
+    border-radius: 5rem;
+    background:rgba(0,0,0,.7);
+    position: relative;
+    top:10rem;
+  }
+  
+  .home-Cities .controls .vid-btn{
+    height:2rem;
+    width:2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background:#fff;
+    cursor: pointer;
+    margin:0 .5rem;
+  }
+  
+  .home-Cities .controls .vid-btn.active{
+    background:var(--orange);
+  }
+
+  /* -------------- End silder City page --------------------- */
+  
+.login-form-container{
+  position: fixed;
+  top:-120%; left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width:100%;
+  background:rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp-form-container{
+  position: fixed;
+  top:-120%; left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width:100%;
+  background:rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container.active{
+  top:0;
+}
+.signUp-form-container.active{
+  top:0;
+}
+
+.login-form-container form{
+  margin:2rem;
+  padding:1.5rem 2rem;
+  border-radius: .5rem;
+  background:#fff;
+  width:50rem;
+}
+.signUp-form-container form{
+  margin:2rem;
+  padding:1.5rem 2rem;
+  border-radius: .5rem;
+  background:#fff;
+  width:50rem;
+}
+.login-form-container form h3{
+  font-size: 3rem;
+  color:#444;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+  margin: 10px;
+}
+.signUp-form-container form h3{
+  font-size: 3rem;
+  color:#444;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+  margin: 10px;
+}
+.signUp-form-container form .box{
+  width:100%;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  margin:.6rem 0;
+  border:.1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+}
+.login-form-container form .box{
+  width:100%;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  margin:.6rem 0;
+  border:.1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+}
+
+.login-form-container form .box:focus{
+  border-color: var(--orange);;
+}
+.signUp-form-container form .box:focus{
+  border-color: var(--orange);;
+}
+
+.login-form-container form #remember{
+ position: relative;
+ top: 10px;
+width: 20px;
+}
+.signUp-form-container form #remember{
+  position: relative;
+  top: 10px;
+ width: 20px;
+ }
+
+.login-form-container form label{
+  font-size: 18px;
+  position: relative;
+  margin-left: 4px ;
+  left: 4px;
+  top: 10px;
+  padding: 4px;
+}
+.signUp-form-container  form label{
+  font-size: 18px;
+  position: relative;
+  margin-left: 4px ;
+  left: 4px;
+  top: 10px;
+  padding: 4px;
+}
+.login-form-container .btn{
+  position: relative;
+  right: 40px;
+  margin-top: 10px;
+}
+.signUp-form-container .btn{
+  position: relative;
+  right: 40px;
+  margin-top: 10px;
+}
+
+.login-form-container form .btn{
+  display: block;
+  width:100%;
+}
+.signUp-form-container form .btn{
+  display: block;
+  width:100%;
+}
+.login-form-container form p{
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:#666;
+}
+.signUp-form-container form p{
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:#666;
+}
+
+.login-form-container form p a{
+  color:var(--orange);
+}
+.signUp-form-container  form p a{
+  color:var(--orange);
+}
+
+.login-form-container form p a:hover{
+  color:#333;
+  text-decoration: underline;
+}
+.signUp-form-container form p a:hover{
+  color:#333;
+  text-decoration: underline;
+}
+
+.login-form-container #form-close1 ,.signUp-form-container #form-close2 {
+  position: absolute; 
+  bottom: 55rem; 
+  right: 20px;
+  font-size: 6rem;
+  color:#fff;
+  cursor: pointer;
+}
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+      font-size: 80%;
+    }
+  
+  }
+  
+  @media (max-width:991px){
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; right:0; left: 0;
+      background: #333;
+      border-top: .1rem solid rgba(255,255,255,.2);
+      padding:1rem 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      display: block;
+      border-radius: .5rem;
+      padding:1.5rem;
+      margin:1.5rem 0;    
+      background:#222;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+  
+    html{
+      font-size: 80%;
+    }
+  
+    .heading span{
+      font-size: 2.5rem;
+    }
+  
+    .contact .row form .inputBox input{
+      width:100%;
+    }
+  
+  }
+
+  
+   .info-page-Governorate{
+       margin: 80px 50px;
+       padding: 20px 40px;
+      
+   }
+   .info-page-Governorate h2{
+       width: 70%;
+       position: relative;
+       left: 150px;
+       background-color: #fbe1b6;
+      color: #daa46d;
+      font-family: 'Indie Flower', cursive;
+      letter-spacing: 2px;
+      font-weight: bolder;
+       font-size: 50px;
+       text-align: center;
+       margin: 40px 20px;
+       
+   }
+   .info-page-Governorate p , label {
+display: flex;
+position: relative;
+justify-items: center;
+text-align: center;
+font-family: 'Architects Daughter', cursive;
+padding: 20px 50px;
+left: 35px;
+font-size: 20px;
+
+
+   }
+    #Region{
+position: relative;
+font-family: 'Architects Daughter', cursive;
+background-color: white;
+border-radius: 15px;
+width: 50%;
+ border: 2px solid #7388a0;
+font-size: 20px;
+    }
+
+    #search-region  { 
+        display: flex;
+        position: relative;
+        bottom:700px;
+        padding-left: 40px;
+        width: 20%;
+        font-size: 17px;
+        letter-spacing: 5px;
+        border-radius: 55px;
+        font-family: 'Architects Daughter', cursive;
+        margin-left: 500px;
+        border: 2px solid gray;
+    }
+
+    #search-region:hover {
+        background-color: #fbe1b6;
+        color:#daa46d;
+        font-weight: bolder;
+      
+    }
+
+
+     /*    -------------------- Grid images  -----------------*/ 
+.parent .contianer div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px , auto));
+    grid-template-rows:repeat(auto-fill, minmax(100px , auto));
+    gap: 120px ;
+  
+ 
+}
+.parent .contianer {
+
+  display: flex;
+  flex-flow: row;
+  justify-items: center;
+
+}
+.parent .contianer img{
+width: 300px;
+height: 250px;
+padding: 30px;
+
+}
+
+.col-1{
+  margin-left: 50px;
+  margin-right: 180px;
+}
+.col-2{
+ margin-right: 60px;
+}
+.col-3{
+  margin-right: -40px;
+
+ }
+ 
+
+
+ #pic-museum input,#pic-resortPoll input, #pic-garden input ,#pic-Farmer input ,
+#pic-Archaeological-Areas  input , #pic-Markets input ,#pic-Rsort-beach input ,
+#pic-Restaurants input{
+ 
+  width: 35px;
+  height: 20px;
+  position: relative;
+  left: 20px;
+ border-radius: 14px;
+ margin-top: 4px;
+
+}
+
+#pic-museum label,#pic-resortPoll label,
+ #pic-Markets label ,#pic-Rsort-beach label ,
+#pic-Restaurants label{
+position: relative;
+bottom: 150px;
+color: #975704;
+margin-left: 20px;
+width: 100%;
+font-family: 'Architects Daughter', cursive;
+font-weight: bolder;
+font-size: 25px;
+padding: 4px 6px;
+text-align: center;
+}
+
+#pic-Archaeological-Areas label {
+  position: relative;
+  left: -18px;
+  margin-left: 60px;
+  bottom: 150px;
+  color: #975704;
+  width: 90%;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px ;
+  text-align: center;
+}
+
+#pic-Markets label ,#pic-Farmer label , #pic-garden label {
+  position: relative;
+  left: -12px;
+  bottom: 150px;
+  margin-left: 60px;
+  color:#975704;
+  width: 90%;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px ;
+}
+/* 
+ color: #7388a0,#fbe1b6, #79634e , #9c4f20,  #766621;
+
+*/
+
+.pic-search-governorate{
+  position: relative;
+  bottom: 500px;
+    width: 100%;
+    margin-left: 100px;
+    height: 1400px;
+    padding-top: 10px;
+  
+}
+
+.defult-info-governorate img {
+    border-radius: 100px;
+    width: 600px;
+    height: 400px;
+    
+    margin-left: 20px;
+}
+.defult-info-governorate p{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    left: 370px;
+    bottom: 180px;
+    background-color: white;
+    opacity: 0.85;
+    color: #975704;
+    font-family: fantasy;
+    font-size: 18px;
+    border: 2px solid #fbe1b6;
+    margin-left: 90px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.defult-info-governorate p>span{
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* --------------- desing show some place Amman ---------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Amiri|Aref+Ruqaa|Cairo|Changa|El+Messiri|Harmattan|Jomhuria|Lateef|Mirza|Rakkas|Lato|Source+Sans+Pro|Ubuntu');
+/* *{transition: 0.3s linear; padding:0;margin:0;} */
+
+	
+
+.container-placeAmman{
+	margin: 2em 20px;
+	width: 100%;
+	text-align: center;
+/* 	font-family: 'Aref Ruqaa', serif; */
+	font-family: 'Ubuntu', sans-serif;
+/* font-family: 'Lato', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+	
+
+}
+.item {
+/* 	background: #FFF; */
+	margin: 2em;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	transform: rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	padding:0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 0 auto;
+}
+.item p {
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 30%;
+	left: -20%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	width:130%;
+	text-align:center;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	
+}
+
+.item:hover {
+	transform: none;
+	transform: scale(1.5);
+	z-index:2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.item:hover > p {
+	transform: none;
+	top: 0;
+	
+}
+
+
+.im-place-Amman{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s linear;
+	transform: rotate(-45deg) scale(1.4) 
+
+	
+}
+.item:hover > img {
+	transform: none;
+	
+}
+
+p.ar {
+font-family: 'Rakkas', cursive;
+	font-size:1.1em;
+
+}
+
+
+/* -----------------  details explain place in amman with img --------------*/
+
+
+
+/* ---------------------------------- end -----------------------------------*/
+
+/*
+
+Beauty Template
+
+http://www.templatemo.com/tm-519-beauty
+
+---------------------------------------
+
+COLORS
+primary: #CC9999;
+accent: #CEC0AE;
+accent dar: #786247;
+text dark: #333333;
+text light dark: #747474;
+
+header 1 mb: 25px;
+header 2 mb: 45px;
+header 3 mb: 35px;
+header 4 & 5 mb: 50px;
+others mb: 40px;
+*/
+.all-place-Amman{
+  margin-bottom: 200px;
+}
+.placeAmmaninfo{
+  position: relative;
+  display: flex;
+  bottom: 450px;
+
+}
+
+.tm-mb-25 { margin-bottom: 25px; }
+.tm-mb-35 { margin-bottom: 35px; }
+.tm-mb-40 { margin-bottom: 40px; }
+.tm-mb-45 { margin-bottom: 45px; }
+.tm-mb-50 { margin-bottom: 50px; }
+.tm-gallery-pad { padding: 40px 50px; }
+.tm-gallery-item { margin: 0 5px; }
+
+/*
+.tm-gallery-container { max-width: 960px; }
+*/
+
+h1 { font-size: 3.6rem; }
+
+a { transition: all 0.3s ease; }
+.tm-line-height-2 { line-height: 2; }
+.tm-text-dark { color: #daa46d; }
+.tm-text-light-dark { color:#daa46d; }
+a.tm-text-light-dark:hover { color: #daa46d; }
+
+.tm-top-bar1 {
+  background-color: #daa46d;
+  max-width: 925px;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.tm-bar-2 {
+  background-color: #daa46d;
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.tm-logo {
+    width: 370px;
+    height: 370px;
+    background: url("/images/logo-bg.png") center no-repeat ;
+ 
+    font-size: 2.3rem;  color: #fbe1b6; font-weight: bolder;
+    background-size: 300px;
+    position: absolute;
+    right: -13%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.tm-welcome { display: flex; }
+
+.tm-welcome-left {
+  background-color: #daa46d;
+  padding: 80px;
+  max-width: 925px;
+  width: 84%;
+  position: relative;
+}
+.tm-welcome-left p{
+  color: #7777;
+} 
+
+.tm-welcome-right {
+  max-width: 205px;
+  width: 16%;
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+  background: #ffffff;
+  margin-left: -52px;
+}
+
+.tm-welcome-content { max-width: 490px; }
+.tm-font-big { font-size: 1.15rem; color: #fbe1b6;; }
+
+.tm-font-big a { background-color: #fbe1b6;}
+
+.tm-font-normal { font-size: 1rem; }
+
+.tm-welcome-icon {
+  padding: 0 30px 60px;
+  margin-left: 25px;
+}
+.tm-section-2-text h3{
+  color: #fbe1b6;;
+}
+
+.placeAmmaninfo h2 { font-size: 2.3rem;  color: #fbe1b6; font-weight: bolder;}
+
+.placeAmmaninfo p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.tm-welcome-link {
+  text-decoration: underline;
+  float: right;
+  color: white;
+  margin-top: 10px;
+}
+.tm-section-3-text p{
+  color:#7777 ;
+}
+#tm-section-2-textP{
+  font-size: 16px;
+}
+#tm-section-2-textP a , #tm-section-3-textP a{
+  color: rgb(255, 255, 255);
+}
+.tm-section-mb { margin-bottom: 30px; }
+.tm-section-pb { padding-bottom: 100px; }
+.tm-section-pt { padding-top: 125px; }
+
+.tm-section-2-header {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.tm-section-2-inner,
+.tm-section-3-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tm-section-3 { min-height: 560px; }
+
+.tm-section-2-left {
+  display: flex;
+  width: 50%;
+  min-height: 560px;
+  -webkit-clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+  clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+}
+
+
+.tm-section-2-right {
+  padding: 70px 120px 40px;
+  width: 50%;
+  margin-left: -40px;
+  -webkit-clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+  clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+}
+
+.tm-img-container {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tm-img-container-1 {
+  background-image: url("/images/jara.png");
+  background-size: 1200px;
+  width: 50px;
+
+  background-position: top center;
+}
+.tm-section-2-text h1,h3{
+  color: #fbe1b6;
+}
+.tm-section-2-text p{
+color: #7777;
+}
+.tm-img-container-2 {
+  background-image: url("/images/jara.png");
+  background-position: top center;
+  background-size: 1000px;
+  margin-left: 4px;
+}
+
+.tm-img-container-3 {
+  background-image: url("/images/The\ Boulevard\ .jpg");
+  background-size: 1000px;
+  background-position: top right;
+}
+
+.tm-img { width: 49%; }
+.tm-bg-primary { background-color:#daa46d;}
+.tm-bg-accent { background-color: #daa46d; }
+
+.tm-section-3-left {
+  padding: 70px 100px 80px 120px;
+  width: 50%;
+  -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+  clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+  min-height: 560px;
+}
+
+.tm-section-3-right {
+  width: 50%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+  clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%); /*https://bennettfeely.com/clippy/*/
+  margin-left: -40px;
+}
+
+.tm-p-ml { margin-left: -35px; }
+
+
+@media (min-width: 1430px) {
+  .tm-contact-left { width: 80%; }
+
+  .container {
+    max-width: 1430px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (max-width: 1310px) {
+  .tm-bar-2 { max-width: 100%; }
+}
+
+@media (max-width: 1199px) {
+  .tm-logo {
+    width: 300px;
+    height: 300px;
+    top: 25%;
+  }
+
+  .tm-welcome-content { max-width: 450px; }
+
+  .tm-top-bar,
+  .tm-welcome-left {
+    max-width: 782px;
+  }
+
+  .tm-welcome-right { margin-left: -55px; }
+  .tm-section-3-left { padding-bottom: 63px; }
+
+  .tm-section-3-right {
+    -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 15% 100%);
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 15% 100%);
+  }
+}
+
+@media (max-width: 991px) {
+  .tm-welcome { flex-direction: column-reverse; }
+  .tm-logo {
+    top: -250px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tm-welcome-left {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .tm-welcome-content {
+    max-width: 100%;
+  }
+  .tm-welcome-icons-container {
+    display: flex;
+    justify-content: center;
+  }
+  .tm-welcome-right {
+    max-width: 100%;
+    width: 100%;
+    height: 250px;
+    transform: skewY(-5deg);
+    margin-bottom: -30px;
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .tm-section-2-inner {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  
+
+  .tm-section-2-left { margin-left: 0; }
+
+  .tm-section-2-right {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .tm-section-2-left {
+    width: 100%;
+    height: 560px;
+  }
+
+  .tm-section-3-inner { flex-direction: column-reverse; }
+
+  .tm-section-3-left {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tm-section-3-right {
+    width: 100%;
+    height: 560px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .tm-welcome-icon { padding: 0 30px 60px 0; }
+
+  .tm-contact-left {
+    clip-path: none;
+    border-radius: 200px;
+    width: 100%;
+    height: 90%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .tm-section-3-left { width: 100%; }
+  .tm-contact-form { padding-top: 30px; }
+}
+
+@media (max-width: 480px) {
+  .tm-welcome-icon {
+    padding: 0 15px 40px;
+    margin-left: 20px;
+    font-size: 4em;
+  }
+
+  .tm-welcome-left { padding: 100px 40px 80px; }
+
+  .tm-section-2-right {
+    color: #fbe1b6;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .tm-section-3-left { padding: 70px 80px 80px 80px; 
+  color: #fbe1b6;}
+  .tm-gallery-container { max-width: 350px; }
+  .tm-contact-left-inner { width: 70%;}
+}
+
+@media (max-width: 420px) {
+  .tm-section-3-left { padding: 70px 50px 80px 50px; }
+}
+
+/* -------------------- maps amman ------------- */
+#mapsAmman{
+  position: relative;
+  right: 20px;
+}
+
+#Most-PoplurePlace{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color:#daa46d;
+  letter-spacing: 4px;
+font-size: 40px;
+font-weight: bolder;
+position: relative;
+bottom: 60px;
+}

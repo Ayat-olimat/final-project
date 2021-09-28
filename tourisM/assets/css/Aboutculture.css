@@ -1,0 +1,98 @@
+*{
+	
+	margin:0;
+	padding:0;
+}
+
+
+#Title-medical{
+	
+	margin-bottom: 40px;
+	font-family:"Muli", serif;
+	text-shadow:0 1px 1px #9c4f20;
+	font-size:24px;
+	font-weight:normal;
+    line-height: 30px;
+	text-transform:uppercase;
+	color:#daa46d;
+	margin-top: 150px;
+}
+
+#title-deadsea{
+	color: #daa46d;
+    margin-top: -10px;
+	font-size: 25px;
+	font-family:"Yellowtail" ;
+	text-transform:uppercase;
+}
+#article1{
+	margin-top: 40px;
+}
+p{
+	font-family: "Cabin";
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size: 16px;
+}
+
+.line{
+	font-family: "Cabin";
+	margin-top: 200px;
+	height:1px;
+	background-color:#daa46d;
+	border-bottom:1px solid #daa46d;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	font-family: "Cabin";
+	margin-top: 180px;
+	background-color:#fac58f;
+	border-bottom-color:#fac58f;
+	margin:1.3em 0;
+	margin-top: 20px;
+}
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+article,figure{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color: rgb(238, 242, 245);
+	margin:3em 0;
+	padding:20px;
+	color:#9c4f20;
+}
+
+figure{
+	border:3px solid #daa46d;
+	float:right;
+	height:280px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #daa46d;
+	-webkit-box-shadow:0 0 2px #daa46d;
+	box-shadow:0 0 2px #daa46d;
+}

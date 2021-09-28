@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.Carouselom/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+  --orange:#daa46d;
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 55.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+/* header */
+
+.page-header {
+  font-weight: 10;
+}
+
+.page-description {
+  padding: 1px;
+  margin: 2px;
+  margin-left: -1px;
+  border: 1px solid #000;
+}
+
+/* ----------------------- logo page ------------------------ */
+header{
+  text-align: center;
+  position: fixed;
+  top:0; left: 0; right:0;
+  background:#daa46d;
+  z-index: 14000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo span{
+  color:#9c4f20;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  
+}
+header .logo{
+  font-size: 2.7rem;
+  font-weight: bolder;
+  color:#9c4f20;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  text-decoration: none;
+  right: 150px;
+  bottom: 2px;
+}
+header .search-bar-container{
+  position: absolute;
+  top:100%; left: 0; right:0;
+  padding:1.5rem 2rem;
+  background:#fbe1b6;
+  border-top: .1rem solid rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .navbar a{
+  color:#9c4f20	;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  margin:0 2px;
+  padding: 4px 10px;
+  text-decoration: none;
+
+}
+header .navbar a:hover{
+  color:#333	;
+  font-weight: bolder;
+  border: 3px solid #9c4f20;
+  border-radius: 10px;
+  padding: 4px 5px;
+  text-decoration: none;
+}
+header .icons i{
+  font-size: 2.5rem;
+  color:#9c4f20;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+header .icons i:hover{
+  color:white;
+}
+header .search-bar-container.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .search-bar-container #search-bar{
+  width:100%;
+  padding:1rem;
+  text-transform: none;
+   color:#9c4f20;
+  
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+header .search-bar-container label{
+  color:#fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+#menu-bar{
+  color:#fff;
+  border:.1rem solid #fff;
+  border-radius: .5rem;
+  font-size: 3rem;
+  padding:.10rem 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+.section-homePage{
+  padding:2rem 9%;
+}
+.heading{
+  text-align: center;
+  padding:2.5rem 0;
+  position: relative;
+  margin-top: 100px;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.heading span{
+  font-size: 3.5rem;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 35px;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  position: relative;
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+.heading span.space{
+  background:none;
+}
+.section-homePage{
+  padding:2rem 9%;
+}
+/* ----------------------- End logo page ------------------------ */
+
+/*  ---------------- Listed  from Nav bar  -----------------*/
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a{
+  
+  display: block;
+  padding: 0 10px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  width: 220px;  
+  display: list-item;
+  position: relative;
+  
+}
+nav ul ul li a{
+  background-color: #fbe1b6;
+  line-height: 40px;
+}
+
+nav ul ul ul li{
+  position: relative;
+  background-color: #fbe1b6;
+  top: -60px;
+  left: 210px;  
+  margin: 8px ;
+  width: 100px;
+}
+#menu-bar{
+  color:#fff;
+  border:.1rem solid #fff;
+  border-radius: .5rem;
+  font-size: 3rem;
+  padding:.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.form-close{
+  position: relative;
+  top: 1000px;
+  font-size: 40px;
+  color: #eee;
+}
+
+/*--------------- End listed Nav ----------------------------*/
+
+/* ----------------------- slider Home page ------------------------ */
+
+.home{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column;
+   position: relative;
+   z-index: 0;
+   margin-top: 51px;
+   
+ }
+ .home img {
+   object-fit: cover;
+   height: 500px;
+ }
+ .home .content{
+   text-align: center;
+ }
+ 
+ .home h3{
+   font-size: 4.5rem;
+   font-weight: bold;
+   width: 100%;
+   font-family: 'Playball', cursive;
+   color:#eee;
+   position: relative;
+   bottom: 110px;
+   letter-spacing: 10px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+ }
+ .sliderImg2Home{
+   bottom:15px !important;
+color: #ffe600 !important;
+ }
+ .sliderImg3Home{
+   color:#975704 !important;
+
+ }
+
+/*------------------------ end slider HOme Page --------------------- */
+/*------------------------ start section caram family --------------------- */
+.img-caram{
+  margin-top: 100px;
+  width: 100vh;
+  height: 540px;
+  }
+  
+.image-with-text {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin-top: 40px;
+  margin-right: 18px; }
+
+.text-side-button {
+  transition: 0.3s all; 
+  background:var(--orange);
+  padding: 15px 30px; 
+  color: #fff;
+  width: max-content; 
+  max-width: 100%; 
+}
+.text-side1 {
+  display: flex;
+  width: calc( 50% - 2em); 
+}
+.text-side-inline1{
+  display: inline-block; 
+  margin-top: 20px;
+}
+
+.text-side-title1 {
+  color:var(--orange);
+  text-transform: uppercase;
+  align-items: center;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  margin-left: 90px;
+  margin-top: 250px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 25px; 
+  line-height: 20px;
+}
+.text-side-desc1 {
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #7777;
+  font-size: 20px; 
+}
+/*----------------- End section caram family --------------- */
+
+/*--governorate section--*/ 
+
+.slider{
+  max-width: 1300px;
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+.slider .card{
+  flex: 1 1 10px;
+  margin: 0 10px;
+  
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 40px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 400;
+  color: #975704;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 800;
+ 
+  line-height: 20px;
+}
+.card .content p{
+  font-size:1.7rem;
+  text-align: center;
+  color:#666;
+  padding:1px 0;
+ 
+}
+.butn{
+  display: inline-block;
+  margin-top: 1rem;
+  align-items: center;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-left: 90px;
+}
+.butn:hover{
+  background-color: #fbe1b6;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: -5px;
+  margin-left: 40px;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+}
+.margin-top-part{
+  margin-top: 20px;
+}
+
+/*--governorate section end --*/ 
+
+/*--new sletter section-*/
+.wrapper-Home{
+  margin-top: 200px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+  margin-bottom: 100px;
+  margin-top: 250px;
+  background: url("/images/Ancient-sites.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+.wrapper-Home>h1{
+	font-size: 42px;
+	color: rgb(5, 5, 5);
+}
+.wrapper-Home p{
+	margin-bottom: 40px;
+	color: #999696;
+	font-size: 20px;
+}
+.newsletter-Home{
+	max-width: 600px;
+	width: 100%;
+	position: relative;
+}
+.newsletter-Home .input-Home{
+	width: 100%;
+	padding: 30px 100px 30px 60px;
+	border-radius: 10px;
+  opacity: 0.65;
+	font-weight: bold;
+  font-size: 15px;
+}
+.newsletter-Home .fas{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	left: 20px;
+	font-size: 20px;
+}
+.newsletter-Home .btn-Home{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+	background: var(--orange);
+	padding: 15px 20px;
+	border-radius: 25px;
+	font-size: 12px;
+	letter-spacing: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+/*--endnew sletter section--/*
+/* start section TYPE OF TOURISM */
+.info{
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .type-tourism h2 {
+    display:flex;
+  flex-wrap: wrap;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+    color :var(--orange);
+    font-size: 25px;
+    font-weight: 50px;
+    line-height: 40px;
+    margin-top: 10%;
+    margin-left: -10px;
+    margin-bottom: 22px;
+  
+  }
+  .link-tourism{
+    margin-top: 30px;
+    margin-left: -30px;
+    justify-content: space-around;
+  }
+  
+  .link-tourism a{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px;
+    color: black;
+   }
+  
+   .link-tourism a:hover{
+    color:var(--orange);
+   }
+  .img-tourism {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 8%;
+    margin-bottom: 50px;
+  
+  }
+  .img-tourism img{
+    width: 220px;
+    height: 340px; 
+  }
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+.opacity-low {
+  opacity: 0.5;
+}
+.img-box:hover img { 
+  transform: scale(1.1);}
+
+/*end section TYPE OF TOURISM */
+
+/*----------------- start footer section--------------- */
+.footer{
+margin-top: 1500px;
+background-color:var(--orange);
+}
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#9c4f20	;
+}
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+}
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.2rem 0;
+  color:#9c4f20	;
+}
+.footer .box-container .box a:hover{
+ color:black;
+  text-decoration: underline;
+}
+.footer-distributed{
+	background: #daa46d;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+  
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+/* The company logo */
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+	color:footer-icons-icons  #9b4b4b;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+color: #9c4f20;
+}
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;	color:footer-icons-icons  #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-icons{
+	margin-top: 20px;
+}
+#supporMail-footer a{
+  color: #9c4f20;
+  font-size: 18px;
+}
+#supporMail-footer a:hover{
+  color:#333;
+  
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 25px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	line-height: 28px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ .logo1{
+  font-size: 2.7rem;
+  font-weight: bolder;
+  color:#9c4f20  !important;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  text-decoration: none;
+  left: 10px;
+  bottom: -5px;
+}
+
+@media only screen and (max-width: 767px) {
+
+}

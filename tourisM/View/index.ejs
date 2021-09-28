@@ -1,0 +1,334 @@
+<%- include('parts/header'); -%> <%# include header.ejs from view/parts %> 
+<%- include('parts/navBar'); -%><%# include nav-bar.ejs [Navigation] from view/parts %> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<!-- home section starts  -->
+
+<section class="home section-homePage" id="home">
+
+
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="./images/fullcover.jpg"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive sliderImg1Home">Live the Moment  <br> in Jordan</h3>
+         <div class="content">
+        <a href="/details" class="btn">discover more</a>
+    </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="./images/Aqaba-Governorate.jpg"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        
+        <div class="carousel-caption">
+        <h3 class="h3-responsive sliderImg2Home">Live the Moment  <br> in Jordan</h3>
+        <div class="content">
+    
+        <a href="/details" class="btn">discover more</a>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="./images/wadirum.jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+          <div class="carousel-caption">
+          <h3 class="h3-responsive sliderImg3Home">Live the Moment  <br> in Jordan</h3>
+          <div class="content">
+          <a href="#" class="btn">discover more</a>
+          </div>
+          </div>
+          </div>
+          </div>
+      </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper--> 
+  </section>
+   
+
+
+
+<!-- governorate section starts  -->
+
+    <section class="packages section-homePage" id="packages">
+
+    <h1 class="heading">
+   <span>G</span>
+   <span>o</span>
+   <span>v</span>
+   <span>e</span>
+   <span>r</span>
+   <span>n</span>
+   <span>o</span>
+   <span>r</span>
+   <span>a</span>
+   <span>t</span>
+   <span>e</span>
+    </h1>
+    <div class="slider owl-carousel">
+      <div class="card">
+      
+        <div class="img">
+      <img src="images/Amman.jpg" alt=""></div>
+      <div class="content">
+          <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Amman </div>
+      <p>Amman is the capital of the Hashemite Kingdom of Jordan and the center of the Capital Governorateand the center of the Capital Governorate.</p>      <a href="/Governorate"><button  class="btn" id="link-AmmanPage" >Explore more</button></a>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+      <img src="images/irbid_0.jpg" alt=""></div>
+      <div class="content">
+          <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Irbid</div>
+      <p>​Irbid,Jordan’s second-largest city is something of a glorified university town. 
+         Home ​to Jordan University of Science and Technology​.</p>
+      <button  class="btn"  >Explore more</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+      <img src="images/Ajloun.jpeg" alt=""></div>
+      <div class="content">
+          <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Ajloun</div>
+      <p> Ajloun is a city located in the northwest of Jordan, which is a city surrounded by high mountains known</p><br>
+      <a href="/Ajloun"><button  class="btn">Explore more</button></a>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+      <img src="images/jarsh.jpeg" alt=""></div>
+      <div class="content">
+          <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Jerash</div>
+      <p>  The history of this city dates back to the time of its founding during the reign of Alexander.</p>
+      <br><button  class="btn">Explore more</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/ma'an.jpeg" alt=""></div>
+        <div class="content">
+        <div class="title"><i class="fas fa-map-marker-alt"></i>
+            ma'an </div>
+       <p>Ma'an is located in the southern part of the country on the western outskirts of the desert plateau .</p> <br>    <button  class="btn"  >Explore more</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/Aqaba.jpg" alt=""></div>
+        <div class="content">
+        <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Aqaba </div>
+      <p>  Aqaba is located in the far south of the Hashemite Kingdom of Jordan on the Red Sea coast.</p><br>
+      <a href="/Aqapa"><button  class="btn"  >Explore more</button></a>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/mafraq.jpg" alt=""></div>
+        <div class="content">
+        <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Mafraq </div>
+      <p>second largest governorate in terms of area after Ma'an governorate,the Northern Badia region constitutes the vast majority of its area.</p>
+      <button  class="btn" >Explore more</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/zarqaa.jpg" alt=""></div>
+        <div class="content">
+         <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Zarqa </div>
+        <p>governorate located to the east of the Jordanian capital, Amman, It is the third largest governorate in Jordan</p>      <button  class="btn" >Explore more</button>
+      </div>
+      </div>
+ 
+      <div class="card">
+        <div class="img">
+        <img src="images/ma.jpg" alt=""></div>
+        <div class="content">
+        <div class="title"><i class="fas fa-map-marker-alt"></i>
+            Madaba</div>
+      <p>Madaba Governorate is one of the Governorates of Jordan. It includes within it many archaeological and natural monuments.</p>
+      <button  class="btn"  >Explore more</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/karak.jpg" alt=""></div>
+        <div class="content">
+         <div class="title"><i class="fas fa-map-marker-alt"></i>
+           Karak </div>
+     <p>The governorate of Karak is characterized by its different topography, due to the presence of the desert, mountainous.</p>     <button  class="btn"  >Explore more</button>
+     </div>
+     </div>
+
+     <div class="card">
+      <div class="img">
+      <img src="images/tafila.jpeg" alt=""></div>
+      <div class="content">
+       <div class="title"><i class="fas fa-map-marker-alt"></i>
+          Tafilah </div>
+    <p>Tafila Governorate is considered one of the distinguished governorates due to its geographical and climatic diversity.</p>    <button  class="btn"  >Explore more</button>
+    </div>
+    </div>
+      <div class="card">
+        <div class="img">
+        <img src="images/salt.jpeg" alt=""></div>
+        <div class="content">
+         <div class="title"><i class="fas fa-map-marker-alt"></i>
+            salt </div>
+      <p>Al-Salt is about 35 kilometers from the capital, Amman, and it is the capital of Al-Balqa Governorate.</p><br><br>      <button  class="btn"  >Explore more</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!-- governorate section End  -->
+
+      <!-- Type torism section starts  -->
+      <section class="type-tourism section-homePage" id="Type-tourism">
+        <h2>Type of tourism in jordan </h2>
+        <div class="link-tourism">
+          <a href="/culture">cultural</a>
+          <a href="/medical"> Medical</a>
+        <a  href="#"> Sport  </a>
+        <a href="#">Religious</a>
+        <a href="#">summer</a>
+    </div>
+    </section>
+
+  <div class="gallery-image">
+  <div class="img-box">
+  <img src="images/sport.jpg" alt="" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>Parachuting</p>
+      </div>
+    </div> 
+  </div>
+  <div class="img-box">
+    <img src="images/sport0.jpg" alt="" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>bicycle racings</p>
+      </div>
+    </div>
+  </div>
+  <div class="img-box">
+    <img src="images/sport6.jpg" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>amazing places</p>
+      </div>
+    </div>
+  </div>
+  <div class="img-box">
+    <img src="images/sport2.jpg" alt="" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>yacht racing</p>
+      </div>
+    </div> 
+  </div>
+  <div class="img-box">
+    <img src="images/sport1.jpg" alt="" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>camping activities</p>
+      </div>
+    </div> 
+  </div>
+  <div class="img-box">
+    <img src="images/sport3.jpg" alt="" />
+    <div class="transparent-box">
+      <div class="caption">
+        <p>horses racing</p>
+      </div>
+    </div> 
+  </div>
+</div>
+<section class="section-homePage">
+  <div class="image-with-text">
+    <div class="image-side">
+      <img class="img-caram" src="./images/talkk.png " >
+    </div>
+  
+    <div class="text-side1">
+      <div class="text-side-inline1">
+        <h2 class="text-side-title1">KARAM FAMILY</h2>
+        <p class="text-side-desc1">People who host tourists for several days and introduce them to the history of Jordan and honor them with Jordanian folk food.</p>
+          <a href="/KaramFamily"><button  class="butn" id="KaramFamilyBtn-page">Explore more</button></a>
+      </div>
+    </div>
+    </div>
+    </section>
+  <!-- type of tourism section ends -->
+
+
+  <!-- new sletter section starts  -->
+<div class="wrapper-Home">
+	<h1>Subscribe to our Newsletter</h1>
+	<p>Receive updates instanly</p>
+	<div class="newsletter-Home">
+		<input type="text" class="input-Home" placeholder="Enter Your Email">
+		<i class="fas fa-envelope"></i>
+		<div class="btn-Home">Subscribe</div>
+	</div>
+</div>	
+
+<!-- new sletter section End  -->
+
+ 
+  
+<script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+    </script>
+
+
+
+
+<%- include('parts/footer'); -%>

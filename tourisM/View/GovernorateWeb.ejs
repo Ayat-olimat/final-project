@@ -1,0 +1,318 @@
+<%- include('parts/header'); -%> <%# include header.ejs from view/parts %> 
+<%- include('parts/navBar'); -%><%# include nav-bar.ejs [Navigation] from view/parts %> 
+<link rel="stylesheet" href="./css/covernoratePage.css">
+
+  <!-- ------------ Slider images cover ------------------ -->
+      
+<section class="home-Cities" id="home-Cities">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="/Videos/video2.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video4.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video5.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video3.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video6.mp4"></span>
+     
+</div>
+    <div class="video-container">
+        <video src="/Videos/video2.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- home section ends -->
+<section class="info-page-Governorate">
+ <h2> WElcome TO Amman City </h2>
+   <p id="para-governorateTop ">
+    Amman, The Capital Of Jordan, Is A Fascinating City Of Contrasts – A Unique Blend Of Old And New, Situated On A Hilly Area Between The Desert And The Fertile Jordan Valley. In The Commercial Heart Of The City, Ultra-Modern Buildings, Hotels, Smart Restaurants, Art Galleries And Boutiques Rub Shoulders Comfortably With Traditional Coffee Shops And Tiny Artisans' Workshops.    </p>
+    <form action="#">
+ <label for class="Region">Choose A Region Name:</label>
+    <select name="Region" id="Region">
+      <option value="Amman Citadel">Amman Citadel</option>
+      <option value="Jabal Al Weibdeh">Jabal Al Weibdeh</option>
+      <option value="Downtown">Downtown</option>
+      <option value="Marca" >Marca</option>
+      <option value="Mogableen">Mogableen</option>
+      <option value="Khilda">Khilda</option>
+      <option value="Sweileh">Sweileh</option>
+      <option value="Shafa-Badran">Shafa Badran</option>
+      <option value="Marj-Al-Hamam">Marj Al-Hamam</option>
+      <option value="Sweileh">Sweileh</option>
+     </select>
+     </section> 
+              <section class="grid-photo">
+               <div class="parent">
+               <div class="contianer">
+               <div class="col-1">
+               <div id="pic-museum"  class="img-grid-KInds">
+                <img src="./images/Jordan-Museum.jpg" >
+                <input type="checkbox" id="Museums" name="place-InAmman" value="Museums">
+                <label for="Museums"> Museums</label>
+               </div>
+               <div id="pic-resortPoll"  class="img-grid-KInds">
+                <img src="./images/resort-pool.jpeg" >
+                <input type="checkbox" id="Resort-poll" name="place-InAmman" value="Resort-poll">
+                <label for="Resort-poll"> Resort Poll</label>
+           
+               </div>
+               </div>
+                <div class="col-2">
+
+                <div id="pic-Restaurants" class="img-grid-KInds" >
+                    <img src="./images/restaurantJordan .jpg">
+
+                    <input type="checkbox" id="Restaurants" name="place-InAmman" value="Restaurants">
+                    <label for="Restaurants"> Restaurants</label>
+               
+                   
+                   </div>
+                   <div id="pic-Rsort-beach"  class="img-grid-KInds">
+                    <img src="./images/resort-beach.jpeg" >
+                    <input type="checkbox" id="Resort-beach" name="place-InAmman" value="Resort-beach">
+                    <label for="Resort-beach"> Resort-beach</label>
+                   
+                   </div>
+                  </div>
+                <div class="col-3">
+                <div id="pic-Markets"  class="img-grid-KInds">
+                    <img src="./images/marketts.jpg">
+                    <input type="checkbox" id="Market" name="place-InAmman" value="Market">
+                    <label for="Market"> Market</label>
+                   </div>
+                   <div id="pic-garden"  class="img-grid-KInds">
+                    <img src="./images/garden.jpg">
+                    <input type="checkbox" id="Garden" name="place-InAmman" value="Garden">
+                    <label for="Garden"> Garden</label>
+                   </div>
+                  </div>
+                  <div class="col-4">
+
+                  <div id="pic-Archaeological-Areas"  >
+                    <img src="./images/Roman_amphitheatre_Amman.jpg" >
+                    <input type="checkbox" id="Archaeological-Areas" name="place-InAmman" value="Archaeological-Areas">
+                    <label for="Archaeological-Areas"> Archaeological-Areas</label>
+              
+                   </div>
+                <div id="pic-Farmer"  class="img-grid-KInds" >
+                    <img src="./images/farmer.jpg" >
+                    <input type="checkbox" id="Farmer" name="place-InAmman" value="Farmer">
+                    <label for="Farmer"> Farmer</label>
+                  
+                   </div>
+                  </div>
+               </div>
+            </section>
+    
+       <input type="submit" value="search" id="search-region">
+   </form>
+
+<%# ----------------- details place in amman with explain --------------------- %> 
+
+  <!-- Loader -->
+  
+<section class="placeAmmaninfo">
+  <div class="container">
+    <div class="tm-top-bar1"></div>
+
+    <!-- Welcome section -->
+    <section class="tm-welcome">
+
+      <div class="tm-welcome-left">
+        <!-- Logo -->
+        <div class="tm-logo">
+          <h1 class="tm-site-name">Amman</h1>
+        </div>
+        <div class="tm-welcome-content">
+          <!-- fa icons -->
+          <div class="tm-welcome-icons-container">
+            <i class="fas fa-crown fa-5x tm-welcome-icon"></i>
+            <i class="fas fa-heart fa-5x tm-welcome-icon"></i>
+          </div>
+
+          <h2 class="tm-mb-25">The Capital and Largest City of the Hashemite Kingdom of Jordan.</h2>
+          <p class="tm-font-big"> Is a fascinating city of contrasts – a unique blend of old and new, situated on a hilly area between the desert and the fertile Jordan Valley. In the commercial heart of the city, ultra-modern buildings, hotels, smart restaurants, art galleries and boutiques rub shoulders comfortably with traditional coffee shops and tiny artisans' workshops. Amman’s neighborhoods are diverse and range in cultural and historical context from hustle and bustle of the downtown markets to the art galleries of Jabal Lweibdeh and the modern shopping district of Abdali. </p>
+        
+        </div>
+      </div>
+      <div class="tm-welcome-right"></div>
+
+    </section>
+    <div class="tm-bar-2"></div>
+
+    <section class="row tm-section-mb tm-section-2" value="Sweileh">
+      <div class="col-md-12 tm-section-2-inner">
+        <div class="tm-section-2-left">
+              <div class="tm-img-container tm-img-container-1"></div>
+              <div class="tm-img-container tm-img-container-2"></div>
+        </div>
+        <div class="tm-section-2-right tm-bg-primary">
+          <div class="tm-section-2-text">
+            <h3 class="tm-section-2-header tm-mb-45">HISTORY & CULTURE
+            </h3>
+            <h1>Souq Jara </h1>
+           <p id="tm-section-2-textP">
+                This summer street market in Jabal Amman is open on Fridays and includes stalls selling local wares, pop-up cafes, street food and live performances from local bands and musicians. If you’re in Amman during the summer, you can’t miss out on this family friendly activity!<br><b>Contact information:<br></b><b>Telephone: </b>00962 79 787 8248<br><b>Social media: </b><a href="http://www.facebook.com/SoukJara">http://www.facebook.com/SoukJara</a><br><b><a href="https://www.google.com/maps/place/WWXJ%2BV4/@31.9496875,35.9281238,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d31.9496875!4d35.9303125" target="_blank">Location</a></b></p> 
+        </div>
+      </div>
+    </section>
+
+    <section class="row tm-section-3">
+      <div class="col-md-12 tm-section-3-inner">
+        <div class="tm-section-3-left tm-bg-primary">
+          <div class="tm-section-3-text">
+            <h3 class="tm-section-3-header tm-mb-35">ACTIVITIES</h3>
+            <p>
+            
+                    <b>INDOOR ROCK CLIMBING – CLIMBAT AMMAN</b> 
+                      <br>
+                      If you are looking for an adrenaline rush and cannot make the trip outside Amman for some amazing rock-climbing you do not have to miss out! Try the region’s largest indoor climbing facility at Climbat Amman, where you can traverse climbing surface of over 1500 square meters along more than 6000 bolt-on climbing holds!
+            </p>
+
+            <p id="tm-section-3-textP"><b>Contact information/ how to book:&nbsp;<br>Telephone:</b> 00962 6 5736177<br><b>Social media: </b><a href="http://www.fb.com/climbatamman" target="_blank">http://www.fb.com/climbatamman</a><br><b><a href="https://www.google.com/maps/place/VRJV%2BX9/@31.8824375,35.8412488,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d31.8824375!4d35.8434375" target="_blank">Location</a></b></p>
+         
+          </div>
+        </div>
+        <div class="tm-section-3-right">
+          <div class="tm-img-container tm-img-container-3"></div>
+        </div>
+      </div>
+  </section>
+
+</section>
+<%# ------------------------------------------------------------------============== %> 
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1L8Eji0rXgIZSLsKkFameA5WjN5M"  width="103%" height="500px" frameborder="2" style="border:0" allowfullscreen id="mapsAmman"></iframe>
+ 
+<pre>
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    .
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    .  
+    
+</pre>
+<!---------------------------------Show some place Amman ----------------------------->
+<div class="all-place-Amman">
+<h1 id="Most-PoplurePlace"> Most Poplure Places</h1>
+    <div class="container-placeAmman">
+	
+        <div class="item tm1">
+            <img src="./images/متحف السيارات الملكي .png" class="im-place-Amman">
+        <p>The Royal Automobile Museum </p>
+    </div>
+    
+    
+        <div class="item tm2">
+            <img src="./images/جبل-القلعة-في-عمان.jpg" class="im-place-Amman">
+        <p>Amman Citadel </p>
+        </div>
+    
+            <div class="item tm3">
+                <img src="./images/المدرج-الروماني-في-عمان-1.jpg" class="im-place-Amman">
+        <p class="ar">Roman Theater </p>
+        </div>
+    
+        <div class="item tm4">
+            <img src="./images/حدائق الحسين.jpg" class="im-place-Amman">
+        <p> Al Hussein Public Parks </p>
+        </div>
+        <br>
+        <span>
+            <div class="item tm5">
+            <img src="./images/مطاعم-ورد.jpg" class="im-place-Amman"> 
+        <p> Ward Restaurants </p>
+    </div>
+    
+    
+        <div class="item tm6">
+            <img src="./images/المسبح-الأولومبي.jpg" class="im-place-Amman">
+        <p>Olympic swimming pool<br> (Al-Hussein Youth City) </p>
+        </div>
+    
+            <div class="item tm7">
+                <img src="./images/souk-jara.jpg" class="im-place-Amman">
+        <p>‪Souk Jara‬</p>
+       </div>
+    <span>
+    <br>
+        <div class="item tm8">
+            <img src="./images/دار-اﻷندى.jpg" class="im-place-Amman">
+        <p>Andi House<br>
+            Art gallery</p>
+    </div>
+        <div class="item tm2">
+            <img src="./images/The Boulevard .jpg" class="im-place-Amman">
+        <p>The Boulevard  </p>
+        </div>
+    
+            <div class="item tm3">
+                <img src="./images/Rainbow Street.png" class="im-place-Amman">
+        <p>Rainbow Street</p>
+        </div>
+    
+        <div class="item tm4">
+            <img src="./images/Children museum.jpg" class="im-place-Amman">
+        <p> Children museum </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+<%# ------------------------------------------------------------------------ %>
+
+<%- include('parts/footer'); -%>

@@ -1,0 +1,291 @@
+<%- include('parts/header'); -%> <%# include header.ejs from view/parts %> 
+<%- include('parts/navBar'); -%><%# include nav-bar.ejs [Navigation] from view/parts %> 
+<link rel="stylesheet" href="./css/aqapapage.css">
+
+
+  <!-- ------------ Slider images cover ------------------ -->
+      
+<section class="home-Cities" id="home-Cities">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="/Videos/video2.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video4.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video5.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video3.mp4"></span>
+        <span class="vid-btn" data-src="/Videos/video6.mp4"></span>
+   </div>
+    <div class="video-container">
+        <video src="/Videos/video2.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- home section ends -->
+<section class="info-page-Governorate">
+ <h2> WElcome TO Aqapa City </h2>
+   <p id="para-governorateTop ">
+    Aqaba is the only coastal city in Jordan, and the largest and most populous city among all the cities of the Gulf of Aqaba. Aqaba is located in the far south of the Hashemite Kingdom of Jordan on the coast of the Red Sea, and is the center of the Aqaba Governorate. The city is about 330 kilometers south of the Jordanian capital, Amman.</p>
+    <form action="#">
+    <label for="Region">Choose A Region Name:</label>
+    <select name="Region" id="Region">
+      <option value="Amman Citadel">Aqaba Water Park</option>
+      <option value="Jabal Al Weibdeh">Aqaba sea</option>
+      <option value="Downtown">Aqaba Castle</option>
+      <option value="Marca" >Chinese village in Aqaba</option>
+      <option value="Mogableen">Aqaba malls</option>
+      <option value="Khilda">Aqaba Marine Biology Museum</option>
+     </select>
+ 
+              <section class="grid-photo">
+               <div class="parent">
+               <div class="contianer">
+               <div class="col-1">
+               <div id="pic-museum"  class="img-grid-KInds">
+                <img src="./images/Jordan-Museum.jpg" >
+                <input type="checkbox" id="Museums" name="place-InAmman" value="Museums">
+                <label for="Museums"> Museums</label>
+               </div>
+               <div id="pic-resortPoll"  class="img-grid-KInds">
+                <img src="./images/resort-pool.jpeg" >
+                <input type="checkbox" id="Resort-poll" name="place-InAmman" value="Resort-poll">
+                <label for="Resort-poll"> Resort Poll</label>
+           
+               </div>
+               </div>
+                <div class="col-2">
+
+                <div id="pic-Restaurants" class="img-grid-KInds" >
+                    <img src="./images/restaurantJordan .jpg">
+
+                    <input type="checkbox" id="Restaurants" name="place-InAmman" value="Restaurants">
+                    <label for="Restaurants"> Restaurants</label>
+               
+                   
+                   </div>
+                   <div id="pic-Rsort-beach"  class="img-grid-KInds">
+                    <img src="./images/resort-beach.jpeg" >
+                    <input type="checkbox" id="Resort-beach" name="place-InAmman" value="Resort-beach">
+                    <label for="Resort-beach"> Resort-beach</label>
+                   
+                   </div>
+                  </div>
+                <div class="col-3">
+                <div id="pic-Markets"  class="img-grid-KInds">
+                    <img src="./images/marketts.jpg">
+                    <input type="checkbox" id="Market" name="place-InAmman" value="Market">
+                    <label for="Market"> Market</label>
+                   </div>
+                   <div id="pic-garden"  class="img-grid-KInds">
+                    <img src="./images/garden.jpg">
+                    <input type="checkbox" id="Garden" name="place-InAmman" value="Garden">
+                    <label for="Garden"> Garden</label>
+                   </div>
+                  </div>
+                  <div class="col-4">
+
+                  <div id="pic-Archaeological-Areas"  >
+                    <img src="./images/Roman_amphitheatre_Amman.jpg" >
+                    <input type="checkbox" id="Archaeological-Areas" name="place-InAmman" value="Archaeological-Areas">
+                    <label for="Archaeological-Areas"> Archaeological-Areas</label>
+              
+                   </div>
+                <div id="pic-Farmer"  class="img-grid-KInds" >
+                    <img src="./images/farmer.jpg" >
+                    <input type="checkbox" id="Farmer" name="place-InAmman" value="Farmer">
+                    <label for="Farmer"> Farmer</label>
+                  
+                   </div>
+                  </div>
+               </div>
+            </section>
+    
+       <input type="submit" value="search" id="search-region">
+   </form>
+</section>
+<%# ----------------- details place in amman with explain --------------------- %> 
+
+  <!-- Loader -->
+  
+<section class="placeAmmaninfo">
+  <div class="container">
+    <div class="tm-top-bar1"></div>
+
+    <!-- Welcome section -->
+    <section class="tm-welcome">
+
+      <div class="tm-welcome-left">
+        <!-- Logo -->
+        <div class="tm-logo">
+          <h1 class="tm-site-name">AQAPA</h1>
+        </div>
+        <div class="tm-welcome-content">
+          <!-- fa icons -->
+          <div class="tm-welcome-icons-container">
+            <i class="fas fa-crown fa-5x tm-welcome-icon"></i>
+            <i class="fas fa-heart fa-5x tm-welcome-icon"></i>
+          </div>
+
+          <h2 class="tm-mb-25">Aqaba is the only coastal city in Jordan, and the largest.</h2>
+          <p class="tm-font-big">and most populous city among all the cities of the Gulf of Aqaba. Aqaba is located in the far south of the Hashemite Kingdom of Jordan on the coast of the Red Sea, and is the center of the Aqaba Governorate. The city is about 330 kilometers south of the Jordanian capital, Amman. Its population in 2015 reached 148,398 people, as it is the fifth largest city in the Kingdom. The city covers an area of ​​375 square kilometers (144.8 sq mi). Aqaba plays a major role in the Jordanian national economy and its development. And that through both the commercial and tourism sectors. It is noteworthy that the port of Aqaba is an important sea crossing for other countries neighboring Jordan as well. </p>
+        
+        </div>
+      </div>
+      <div class="tm-welcome-right"></div>
+
+    </section>
+    <div class="tm-bar-2"></div>
+
+    <section class="row tm-section-mb tm-section-2" value="Sweileh">
+      <div class="col-md-12 tm-section-2-inner">
+        <div class="tm-section-2-left">
+              <div class="tm-img-container tm-img-container-1"></div>
+              <div class="tm-img-container tm-img-container-2"></div>
+        </div>
+        <div class="tm-section-2-right tm-bg-primary">
+          <div class="tm-section-2-text">
+            <h3 class="tm-section-2-header tm-mb-45">HISTORY & CULTURE
+            </h3>
+            <h1>Aqaba Castle </h1>
+           <p id="tm-section-2-textP">
+            Aqaba Castle is located in the center of the tourist city of Aqaba in Jordan, with a charming view of the Gulf of Aqaba shore.
+
+            The castle includes a large number of spacious courtyards with watchtowers, rooms and corridors that still retain their shape and design until our time. A mast bearing the flag of the Arab Revolt was built in the castle square and was the tallest mast in the world when it was built. The castle played a major role during the Arab Revolt.<br>          <p id="tm-section-3-textP"><b>Contact information:<br>Telephone:</b> 00962 6 5736177<br><b>Social media: </b><a href=https://www.facebook.com/sarayaaqabawaterpark target="_blank">http://www.fb.com/climbatAqapa</a><br><b><a href="https://www.google.com/maps/place/%D9%82%D9%84%D8%B9%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A8%D8%A9%E2%80%AD/@29.5213762,35.0020413,15z/data=!4m5!3m4!1s0x0:0x567d96567da954a3!8m2!3d29.5213762!4d35.0020413" target="_blank">Location</a></b></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row tm-section-3">
+      <div class="col-md-12 tm-section-3-inner">
+        <div class="tm-section-3-left tm-bg-primary">
+          <div class="tm-section-3-text">
+            <h3 class="tm-section-2-header tm-mb-45">Activities
+            </h3>
+            <h2>Saraya Aqaba Waterpark </h2>
+            <p>
+              Aqaba Marine Park was established in 1997 within the coasts rich in coral reefs and marine treasures in the city of Aqaba.
+              The park, which is about 7 kilometers long, is considered one of the most attractive tourist places in Jordan for its enjoyable activities. The park aims to give visitors the opportunity to reach a world full of marine life, raise awareness among them and encourage environmentally friendly practices and sustainable tourism.
+            </p>
+            <p id="tm-section-3-textP"><b>Contact information:<br>Telephone:</b> 00962 6 5736177<br><b>Social media: </b><a href=https://www.facebook.com/sarayaaqabawaterpark target="_blank">http://www.fb.com/climbatAqapa</a><br><b><a href="https://www.google.com/maps/dir/32.315391,36.2088308/Aqaba+Water+Park+Aqaba/@30.908244,37.8637109,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x15007159d9ffb867:0x5375730f274bb32e!2m2!1d34.9981777!2d29.5396785"target="_blank">Location</a></b></p>
+          </div>
+        </div>
+        <div class="tm-section-3-right">
+          <div class="tm-img-container tm-img-container-3"></div>
+        </div>
+      </div>
+  </section>
+
+</section>
+<%# ------------------------------------------------------------------============== %> 
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222065.9846847812!2d35.21522135467937!3d29.58097438023282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15007039ff2efa81%3A0x595faa556d2e6acc!2z2KfZhNi52YLYqNip!5e0!3m2!1sar!2sjo!4v1632265960254!5m2!1sar!2sjo" width="103%" height="500px" frameborder="2" style="border:0" allowfullscreen id="mapsAmman"></iframe>
+ 
+<pre>
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    .
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    . 
+    .
+    . 
+    . 
+    ,
+     
+    . 
+    .  
+    
+</pre>
+<!---------------------------------Show some place Amman ----------------------------->
+<div class="all-place-Amman">
+<h1 id="Most-PoplurePlace"> Most Poplure Places</h1>
+    <div class="container-placeAmman">
+	
+        <div class="item tm1">
+            <img src="./images/Aqaba-Tourism-1.jpg" class="im-place-Amman">
+        <p>Aqaba Water Park</p>
+    </div>
+    
+    
+        <div class="item tm2">
+            <img src="./images/Aqaba-Governorate.jpg" class="im-place-Amman">
+        <p>Aqaba sea </p>
+        </div>
+    
+            <div class="item tm3">
+                <img src="./images/Aqaba-Fortress-1.jpg"  class="im-place-Amman">
+        <p class="ar">Aqaba Castle</p>
+        </div>
+    
+        <div class="item tm4">
+            <img src="./images/The-Chinese-Village-in-Aqaba-2.jpg"class="im-place-Amman">
+        <p> Chinese village in Aqaba </p>
+        </div>
+        <br>
+        <span>
+            <div class="item tm5">
+            <img src="./images/download (5).jpeg" class="im-place-Amman"> 
+        <p> Aqaba malls</p>
+    </div>
+    
+    
+        <div class="item tm6">
+            <img src="./images/visit-aqaba-aquarium-1-new-1.jpg" class="im-place-Amman">
+        <p>Aqaba Marine Biology Museum</p>
+        </div>
+
+    
+       
+        </div>
+        </div>
+        </div>
+<%# ------------------------------------------------------------------------ %>
+
+<%- include('parts/footer'); -%>
+

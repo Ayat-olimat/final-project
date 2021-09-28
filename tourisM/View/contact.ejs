@@ -1,0 +1,28 @@
+<%- include('parts/header'); -%> <%# include header.ejs from view/parts %> 
+<%- include('parts/navBar'); -%><%# include nav-bar.ejs [Navigation] from view/parts %> 
+
+<section class="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left"></div>
+      <div class="contact-right">
+        <h1 class="contact-heading">Contact Us</h1>
+        <form>
+          <div class="input-groupContact">
+            <input type="text" class="fieldContact" />
+            <label class="input-label">Full Name</label>
+          </div>
+          <div class="input-groupContact">
+            <input type="email" class="fieldContact" />
+            <label class="input-label">Email</label>
+          </div>
+          <div class="input-groupContact">
+            <textarea class="fieldContact"></textarea>
+            <label class="message-Contact">Message</label>
+          </div>
+          <input type="submit" class="submit-btn-Contact" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+    <%# --------------- End parts Contact us ------------------- %> 
+<%- include('parts/footer'); -%>

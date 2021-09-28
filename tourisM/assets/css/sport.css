@@ -1,0 +1,373 @@
+#info-museums{
+    color:#daa46d;
+	font-size:36px;
+	font-family: 'RokkittRegular';
+	margin:0 0 10px;
+	margin-bottom: 10px;
+	width:490px;
+	padding:30px 0 0;
+	font-weight:bold;
+}
+#img-museums{
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+.culture-event h4{
+    color:#daa46d;
+	font-size:36px;
+	font-family: 'RokkittRegular';
+	margin:0 0 10px;
+	margin-bottom: 10px;
+	width:490px;
+	padding:30px 0 0;
+	font-weight:bold; 
+}
+.info-monuments h4{
+    color:#daa46d;
+	font-size:30px;
+	font-family: 'RokkittRegular';
+	margin:0 0 10px;
+	margin-bottom: 10px;
+	width:490px;
+	padding:30px 0 0;
+	font-weight:bold;
+}
+.info-monuments img{
+    margin-left: 140px;
+}  
+
+
+.info-Religious h4{
+    color:#daa46d;
+	font-size:30px;
+	font-family: 'RokkittRegular';
+	margin:0 0 10px;
+	margin-bottom: 10px;
+	width:490px;
+	padding:30px 0 0;
+	font-weight:bold; 
+}
+.info-Religious img{
+
+    margin-left: 140px;
+}
+.info-arar h4{
+    color:#daa46d;
+	font-size:30px;
+	font-family: 'RokkittRegular';
+	margin:0 0 10px;
+	margin-bottom: 10px;
+	width:490px;
+	padding:30px 0 0;
+	font-weight:bold;   
+}
+*{
+	box-sizing: border-box;
+	
+}
+body{
+	margin:0;
+	background:url(../images/bg-body.jpg);
+}
+
+#video-medical{
+	margin-top: 170px;
+float: right;
+}
+@font-face {
+    font-family: 'RokkittRegular';
+    src: url('rokkitt-regular-webfont.eot');
+    src: url('rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rokkitt-regular-webfont.woff') format('woff'),
+         url('rokkitt-regular-webfont.ttf') format('truetype'),
+         url('rokkitt-regular-webfont.svg#RokkittRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#import-medical{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color:#777574;
+	font-size:180px;
+	font-family: 'RokkittRegular';
+	width:790px;
+	padding:100px 0 0;
+	font-weight:normal;	
+}
+
+.medical{
+	width:940px;
+	margin:0 auto;
+	margin-top: 110px;
+	padding:0 10px;
+	overflow:hidden;
+}
+#img-body {
+	display: flex;
+	justify-content: center;
+	margin-left: 8px;
+	height: 400px;
+	width: 100%;
+  }
+.medical div#featured h3{
+	color:#daa46d;
+	font-size:36px;
+	font-family: 'RokkittRegular';
+	margin:0 0 30px;
+	margin-bottom: 20px;
+	width:490px;
+	padding:100px 0 0;
+	font-weight:normal;
+}
+#top-img{
+	height: 300px;
+	margin-right: 125px;
+	margin-bottom: 60px;
+}
+#top-text{
+	margin-top: 10px;
+	margin-bottom: 60px;
+	color:#daa46d;
+	font-size:50px;
+	font-family: 'RokkittRegular';
+	width:790px;
+	padding:100px 0 0;
+	font-weight:normal;
+
+}
+.medical div#featured p{
+	width:900px;
+	color:#5d5d5d;
+	font-family: 'RokkittRegular';
+	font-weight: bolder;
+	font-size:16px;
+	line-height:25px;
+	margin-top: 300px;
+	text-shadow: 0 1px 0 #fcfcfc;
+	text-align:justify;
+	margin:0;
+}
+#factors-medical{
+	margin-top: 70px;
+    margin-bottom: 10px;
+	line-height:40px;
+	font-size: 35px;
+	color:#daa46d;
+}
+.medical div#featured input{
+	background:url(../images/interface.jpg) no-repeat;
+	border:0;
+    height:48px;
+    width:190px;
+	font-family: 'RokkittRegular';
+	color:#fff;
+	font-size:20px;
+	margin:28px 0 0 125px;
+	cursor:pointer;
+	outline:none;
+}
+#info-medical{
+	margin-top: 30px;
+	line-height:25px ;
+}
+#info-med{
+	margin-top: 200px;
+	color:#daa46d;
+	font-size:36px;
+	font-family: 'RokkittRegular';
+	margin:0 0 30px;
+    line-height: 50px;
+	width:790px;
+	padding:100px 0 0;
+	font-weight:bold;
+}
+.medical ul.blog{
+	list-style:none;
+	margin:70px 0 0;
+	padding:0 0 20px;
+	background:url(../images/separator.jpg) no-repeat center top;
+	overflow:hidden;
+}
+.medical ul.blog li:first-child{
+	margin:60px 0 0;
+}
+.medical ul.blog li{
+	float:left;
+	background:url(../images/interface.jpg) no-repeat 0 -68px!important;
+	margin:60px 0 0 48px;
+	height:400px;
+	padding:0;
+}
+.medical ul.blog li div{
+	width:271px;
+	height:390px;
+	text-align:center;
+	padding: 8px 0 20px 0;
+	float:none;
+	margin:0;
+	background:none;
+}
+.medical ul.blog li div a img{
+	border:0;
+	margin:0 0 0 -3px;
+}
+.medical ul.blog li div a img:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.medical ul.blog li div p{
+	width:258px;
+	text-align:justify;
+	color:#828081;
+	font-family: 'RokkittRegular';
+	margin:17px 0 0 10px;
+	line-height:20px;
+	font-size:14px;
+	background:none;
+	padding:0;
+}
+.medical ul.blog li div a:first-child{
+	margin:0;
+	padding:0;
+	background:none;
+	width:auto;
+}
+.medical ul.blog li div a:hover{
+	color:#c9713b;
+}
+.medical ul.blog li div a{
+	color:#606060;
+	font-family: 'RokkittRegular';
+	font-style:italic;
+	text-decoration:none;
+	padding:98px 0 0;
+	margin:32px auto 0;
+	display:block;
+	width: 150px;
+	background:url(../images/button-more.jpg) no-repeat center top;
+	outline:none;
+	font-size:16px;
+	font-weight:normal;
+	text-shadow: 0 1px 0 #fcfcfc;
+}
+.medical h3{
+	font-family: 'RokkittRegular';
+	font-size:16px;
+	font-weight:bold;
+	color:#636363;
+	margin:15px 0 0;
+	line-height:21px;
+}
+.medical p{
+	font-family: 'RokkittRegular';
+	font-size:16px;
+	text-align:justify;
+	color:#636363;
+	margin:0 0 20px;
+	line-height:21px;
+}
+.medical p a{
+	outline:none;
+	color:#636363;
+}
+.medical ul{
+	list-style:none;
+    margin:0;
+    padding:0;
+	overflow:hidden;
+}
+.medical ul li:first-child{
+	background:none;
+	padding:0 0 30px;
+}
+.medical body ul li{
+	overflow:hidden;
+	background:url(../images/separator.jpg) no-repeat center top;
+	padding:80px 0;
+}
+.medical ul li div.featured{
+	background:url(../images/interface.jpg) no-repeat 0 -68px;
+	width:281px;
+	height:292px;
+	text-align: center;
+	margin:0;
+}
+.medical ul li div.featured img{
+	margin:10px 0 0 -3px;
+	border:0;
+}
+.medical ul li div.featured ul{
+	overflow:hidden;
+	margin:2px 0 0 10px;
+	
+}
+.body ul li div.featured ul li:first-child{
+	margin:0;
+}
+.medical ul li div.featured ul li{
+	float:left;
+	margin:0 0 0 18px;
+	background:none;
+	padding:0;
+}
+.medical ul li div.featured ul li a{
+	padding:0;
+	margin-bottom: 30px;
+}
+.medical ul li div.featured ul li a img{
+	margin:0;
+	margin-bottom: 5px;
+}
+.medicalul li div.featured ul li a img:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.medical ul li div.featured a{
+	clear:both;
+	display:block;
+	font-size:13px;
+	font-family: 'RokkittRegular';
+	text-decoration:none;
+	color:#8a8889;
+	font-weight:bold;
+	padding:5px 0 0;
+	width:auto;
+	outline:none;
+	margin-bottom: 30px;
+}
+.medical ul li div{
+	float:left;
+	margin:0 0 0 50px;
+	width:909px;
+	background:url(../images/button-more.jpg) no-repeat left bottom;
+}
+.medical ul li div h3{
+	margin:0;
+	font-size:20px;
+	font-weight:bold;
+	font-family: 'RokkittRegular';
+	color:#daa46d;
+	line-height:22px;
+}
+.medical ul li div p{
+	line-height:22px;
+	font-family: 'RokkittRegular';
+	font-size:14px;
+	color:#5D5D5D;
+	padding:0 0 90px;
+	margin:0;
+}
+.medical ul.paging{
+	margin:15px 0 50px 210px;
+}
+.medical ul.paging li{
+	float:left;
+	padding:0 5px;
+	background:none;
+}
+.info-arar img{
+    margin-bottom: 250px;
+    margin-left: 140px;
+}
